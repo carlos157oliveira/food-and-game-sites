@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheeses, Pizzas and Lasagnas</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="jquery.smooth-scroll.min.js"></script>
+    <style>
+        body{
+            background-color: #f8ff5d;
+        }
+
+        .bgMainHeader{
+            background-color: #ff7272;
+            color: #72FF9A;
+        }
+        h1{
+            margin-bottom: 30px;
+        }
+        .tituloPagina{
+            margin: 0;
+        }
+
+        .img-responsive{
+            margin: 0 auto;
+        }
+        kbd{
+            font-size: 16pt;
+        }
+        .container{
+            margin-bottom: 50px;
+        }
+       .tabv{
+           background-color:  #ff7272;
+           font-size: 14pt;
+           color: #72FF9A;
+           font-weight: bold;
+       }
+       .tab-content{
+           padding: 30px;
+       }
+       
+       kbd{
+           display: table-cell;
+           vertical-align: middle;
+       }
+       .jumbotron{
+           margin-bottom: 0px;
+       }
+       .affix{           
+           top: 0px; 
+           width: 100%;   
+           z-index: 3;       
+       }
+       ul.nav-tabs li a{
+           border: 1px solid #b0b0b0;
+       }
+       ul.nav-tabs{
+           border-bottom: 1px solid #b0b0b0;
+       }
+            
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();  
+            
+            $('a').click(function (event) {
+                event.preventDefault();
+                var link = this;
+                $.smoothScroll({
+                    scrollTarget: link.hash
+                });
+            });
+        });        
+
+    </script>
+</head>
+<body>    
+    <body data-spy="scroll" data-target=".navbar" data-offset="225"/>
+        <div class="jumbotron text-center bgMainHeader">
+            <h1>CHEESE POWER<br/><span class="label">It is cientifically <wbr/>proved that <wbr />cheese is the <wbr/>primordial element <wbr/>of all the divine <wbr/>foods!</span></h1>
+        </div>
+        <div class="navbar navbar-inverse" data-spy="affix" data-offset-top="225">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">CHEESE</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#queijos">Queijos</a></li>
+                    <li><a href="#pizzas">Pizzas</a></li>
+                    <li><a href="#lasanhas">Lasanhas</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="queijos" class="container text-center">
+            <h1 class="text-uppercase"><b>cheeses</b></h1>
+            <div class="row">
+                <div class="col-sm-4">
+                   <h3 class="well well-sm" data-toggle="tooltip" title="Queijo macio e cremoso...">Brie</h3> 
+                   <img class="img-responsive" src="img/brie.jpg" width="350"/>
+                </div>       
+                <div class="col-sm-4">
+                    <h3 class="well well-sm" data-toggle="tooltip" title="I like big burgers and I cannot lie!">Cheddar</h3>
+                    <img class="img-responsive" src="img/cheddar.jpg" width="350"/>
+                </div>         
+                <div class="col-sm-4">
+                    <h3 class="well well-sm" data-toggle="tooltip" title="Queijo com fungos verdes!">Gorgonzola</h3>
+                    <img class="img-responsive" src="img/gorgonzola.jpg" width="350"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="well well-sm" data-toggle="tooltip" title="Queijo com fungos quase azuis!">Roquefort</h3>
+                    <img class="img-responsive" src="img/roquefort.jpg" width="350"/>
+                </div>
+                <div class="col-sm-6 text-center">
+                   <h3 class="well well-sm" data-placement="auto" data-toggle="tooltip" title="Delicioso queijo brasileiro!">Minas</h3>
+                    <img class="img-responsive" src="img/minas.jpg" width="350"/>
+                </div>
+            </div>
+        </div>
+        <div id="pizzas" class="container text-center">
+            <h1><b>PIZZAS</b></h1>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><img class="img-responsive img-circle" width="350" src="img/peperonni.png" /></td>
+                        <td><kbd>Pizza de Pepperoni</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-responsive img-circle" width="350" src="img/pizzaqueijo.jpg" /></td>
+                        <td><kbd>Pizza de Queijo</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-responsive img-circle" width="350" src="img/pizzafrango.jpg" /></td>
+                        <td><kbd>Pizza de Frango</kbd></td>
+                    </tr>
+                </tbody>                   
+            </table>
+        </div>
+
+        <div id="lasanhas" class="container text-center">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" class="tabv" href="#lasagna1">Lasanha de Carne</a></li>
+                <li><a data-toggle="tab" class="tabv" href="#lasagna2">Lasanha de Queijo</a></li>
+                <li><a data-toggle="tab" class="tabv" href="#lasagna3">Lasanha de Bacon</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="lasagna1" class="tab-pane fade in active">
+                    <img class="img-responsive" width="500" src="img/lasagna1.jpg"/>
+                </div>
+                <div id="lasagna2" class="tab-pane fade">
+                    <img  class="img-responsive" width="500" src="img/lasagna2.jpg"/>
+                </div>
+                <div id="lasagna3" class="tab-pane fade">
+                    <img class="img-responsive" width="500" src="img/lasagna3.jpg"/>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

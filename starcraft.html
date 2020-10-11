@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>STARCRAFT</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="jquery.smooth-scroll.min.js"></script>
+    <style>
+        body{
+            background-color: #000;
+        }
+
+        .jumbotron{
+            padding: 10px 50px;
+            background-color: #000;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 50px;
+        }
+
+        ul.nav-pills{
+            background-color: #fff;
+            border-radius: 10px;            
+        }
+
+        ul.nav-pills li a{
+            color: #000;
+        }
+             
+        img{
+            margin: 0 auto;
+        }
+
+        .tab-pane{
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        p{
+            font-size: 14pt;
+            text-indent: 30px;
+        }
+        .footer{
+            background-color: #fff;            
+            margin: 30px;
+            border-radius: 10px;
+        }
+        .affix{
+            top: 10%;            
+            z-index: 3;            
+        }
+        .topRight{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 300px;            
+        }        
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("img[des!='true']").hover(function () {
+                var w = $(this).width();               
+                w = (w * 1.25) + "px";               
+                $(this).css({                    
+                    boxShadow: "20px 20px 15px #000"                    
+                }).width(w);
+
+            }, function () {
+                var w = $(this).width();
+                var w = (w * 0.8) + "px";
+                $(this).width(w).css("boxShadow", "none");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-uppercase">starcraft <span class="text-capitalize italic">- the trilogy</span></h1>
+        <img class="img-responsive topRight" des="true" src="strimg/strlogo.png"/>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">      
+                <div data-spy="affix" data-offset-top="150">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="disabled"><a href="#">MAJOR SPECIES</a></li>
+                        <li class="active"><a data-toggle="pill" href="#terrans">Terrans</a></li>
+                        <li><a data-toggle="pill" href="#protoss">Protoss</a></li>
+                        <li><a data-toggle="pill" href="#zergs">Zergs</a></li>
+                    </ul>
+                    <br /><br /> 
+                    <img src="strimg/starcraftlogo.jpg" des="true" class="img-responsive" />
+                </div>                      
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div id="terrans" class="tab-pane fade in active text-justify">             
+                        <h2 class="text-center">TERRANS</h2><br/>           
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ante maximus, porttitor lorem nec, venenatis neque. Nunc feugiat tortor eros, in blandit sem consectetur vitae. Praesent molestie, dui et mollis tincidunt, elit odio tempor ante, sit amet dignissim elit ante quis dui. Quisque feugiat id risus id aliquam. Maecenas auctor sollicitudin felis, non tempus enim. Curabitur hendrerit, tortor non congue dapibus, dolor dui lobortis odio, quis sollicitudin tortor ante et tortor. Ut vehicula arcu libero, a eleifend nibh vehicula at. Fusce efficitur maximus erat ac faucibus. Suspendisse dictum eros id ex ullamcorper, eget tincidunt quam molestie.</p>
+                        <p class="text-center"><b>Vitória dos Terrans no Starcraft I</b></p>
+                        <img src="strimg/terran1.jpg" class="img-responsive"/><br/>                       
+                        <p>Fusce nulla justo, convallis a posuere egestas, viverra eu odio. Nunc et tortor pulvinar, sollicitudin eros non, pellentesque elit. Nam a blandit justo, ac facilisis risus. Curabitur a dictum risus, interdum ornare ligula. Duis a quam id justo venenatis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam at erat at nisi blandit luctus sit amet sed sem. Aliquam cursus, ipsum ac fermentum convallis, ex risus consequat orci, sit amet feugiat arcu ex quis massa. Sed vel ipsum nec nisl vehicula ullamcorper. Fusce fermentum faucibus dolor, vel auctor libero bibendum id. Praesent tortor neque, suscipit eget lorem eu, iaculis accumsan lectus. Vivamus nec velit vestibulum, molestie massa at, accumsan tellus. Suspendisse cursus odio efficitur sollicitudin venenatis. Nam ut cursus ligula. Suspendisse et viverra purus. In hac habitasse platea dictumst.</p>
+                        <p>Sed lacinia ligula leo, ut convallis justo egestas at. Vestibulum maximus augue et massa congue dictum. Fusce urna leo, mollis a mi quis, pharetra vestibulum odio. Ut sit amet sodales nunc, non vestibulum purus. Donec at velit condimentum, efficitur lorem nec, aliquet dolor. Etiam vitae arcu scelerisque, pulvinar magna eu, blandit nunc. Nullam eget vestibulum turpis, ut elementum ante. Sed congue, enim et fermentum feugiat, nisl tellus sollicitudin quam, non viverra est felis id justo. Ut consectetur semper ligula. Suspendisse ex erat, imperdiet sollicitudin tempor id, egestas quis est. Nullam in tellus sit amet justo scelerisque auctor nec nec nisi. Duis suscipit orci tortor. Integer posuere tempus facilisis. Integer nec eros purus. Aenean non varius tellus. Vivamus blandit convallis nisl vel fermentum.</p>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Vitória (mais legal) dos Terrans no Starcraft I</b></p>
+                                <img src="strimg/terran2.jpg" class="img-responsive" />
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Equipe de operações especiais no deserto</b></p>
+                                <img src="strimg/terran3.jpg" class="img-responsive" />
+                            </div>
+                        </div>
+                        <br/>
+                        <p>Nulla id odio ultrices, dictum turpis in, suscipit eros. Mauris placerat commodo purus, iaculis mattis enim congue sed. Aliquam eget quam sit amet tortor venenatis lacinia. Curabitur convallis, velit id commodo pretium, elit orci interdum velit, et rhoncus ante nibh ac ante. Cras volutpat iaculis elit, et egestas est fringilla sit amet. Fusce eget enim vel mi volutpat pellentesque. Etiam viverra sem vel purus facilisis, non rutrum metus pulvinar. Nullam finibus neque sit amet est luctus lobortis. Curabitur pharetra pretium varius.</p>
+                        <p>Vivamus eget turpis ac turpis hendrerit venenatis vitae vel diam. Vivamus ac malesuada odio. Suspendisse at sapien molestie, pretium est nec, tempor nunc. Pellentesque tempus commodo enim et tincidunt. Aliquam pulvinar neque ac ante tempor, eget ultricies diam congue. Aliquam diam velit, varius ac est ultrices, eleifend efficitur sapien. Curabitur tempor egestas orci a hendrerit. Nulla consectetur congue lobortis. Nam lorem purus, dapibus a mauris id, condimentum vulputate nunc. Aliquam a ipsum consequat, ullamcorper velit at, cursus risus. Praesent tempor lacinia risus eget sagittis. Donec et interdum tortor. Etiam dignissim pharetra lacinia. Duis porta ex porttitor tortor bibendum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                    <div id="protoss" class="tab-pane fade text-justify">
+                        <h2 class="text-center">PROTOSS</h2><br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ante maximus, porttitor lorem nec, venenatis neque. Nunc feugiat tortor eros, in blandit sem consectetur vitae. Praesent molestie, dui et mollis tincidunt, elit odio tempor ante, sit amet dignissim elit ante quis dui. Quisque feugiat id risus id aliquam. Maecenas auctor sollicitudin felis, non tempus enim. Curabitur hendrerit, tortor non congue dapibus, dolor dui lobortis odio, quis sollicitudin tortor ante et tortor. Ut vehicula arcu libero, a eleifend nibh vehicula at. Fusce efficitur maximus erat ac faucibus. Suspendisse dictum eros id ex ullamcorper, eget tincidunt quam molestie.</p>
+                        <p class="text-center"><b>Vitória dos Protoss no Starcraft I</b></p>
+                        <img src="strimg/protoss1.jpg" class="img-responsive" /><br />
+                        <p>Fusce nulla justo, convallis a posuere egestas, viverra eu odio. Nunc et tortor pulvinar, sollicitudin eros non, pellentesque elit. Nam a blandit justo, ac facilisis risus. Curabitur a dictum risus, interdum ornare ligula. Duis a quam id justo venenatis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam at erat at nisi blandit luctus sit amet sed sem. Aliquam cursus, ipsum ac fermentum convallis, ex risus consequat orci, sit amet feugiat arcu ex quis massa. Sed vel ipsum nec nisl vehicula ullamcorper. Fusce fermentum faucibus dolor, vel auctor libero bibendum id. Praesent tortor neque, suscipit eget lorem eu, iaculis accumsan lectus. Vivamus nec velit vestibulum, molestie massa at, accumsan tellus. Suspendisse cursus odio efficitur sollicitudin venenatis. Nam ut cursus ligula. Suspendisse et viverra purus. In hac habitasse platea dictumst.</p>
+                        <p>Sed lacinia ligula leo, ut convallis justo egestas at. Vestibulum maximus augue et massa congue dictum. Fusce urna leo, mollis a mi quis, pharetra vestibulum odio. Ut sit amet sodales nunc, non vestibulum purus. Donec at velit condimentum, efficitur lorem nec, aliquet dolor. Etiam vitae arcu scelerisque, pulvinar magna eu, blandit nunc. Nullam eget vestibulum turpis, ut elementum ante. Sed congue, enim et fermentum feugiat, nisl tellus sollicitudin quam, non viverra est felis id justo. Ut consectetur semper ligula. Suspendisse ex erat, imperdiet sollicitudin tempor id, egestas quis est. Nullam in tellus sit amet justo scelerisque auctor nec nec nisi. Duis suscipit orci tortor. Integer posuere tempus facilisis. Integer nec eros purus. Aenean non varius tellus. Vivamus blandit convallis nisl vel fermentum.</p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Protoss Cruiser</b></p>
+                                <img src="strimg/protoss2.jpg" class="img-responsive" />
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Nave-mãe dos Protoss</b></p>
+                                <img src="strimg/protoss3.jpg" class="img-responsive" />
+                            </div>
+                        </div>
+                        <br />
+                        <p>Nulla id odio ultrices, dictum turpis in, suscipit eros. Mauris placerat commodo purus, iaculis mattis enim congue sed. Aliquam eget quam sit amet tortor venenatis lacinia. Curabitur convallis, velit id commodo pretium, elit orci interdum velit, et rhoncus ante nibh ac ante. Cras volutpat iaculis elit, et egestas est fringilla sit amet. Fusce eget enim vel mi volutpat pellentesque. Etiam viverra sem vel purus facilisis, non rutrum metus pulvinar. Nullam finibus neque sit amet est luctus lobortis. Curabitur pharetra pretium varius.</p>
+                        <p>Vivamus eget turpis ac turpis hendrerit venenatis vitae vel diam. Vivamus ac malesuada odio. Suspendisse at sapien molestie, pretium est nec, tempor nunc. Pellentesque tempus commodo enim et tincidunt. Aliquam pulvinar neque ac ante tempor, eget ultricies diam congue. Aliquam diam velit, varius ac est ultrices, eleifend efficitur sapien. Curabitur tempor egestas orci a hendrerit. Nulla consectetur congue lobortis. Nam lorem purus, dapibus a mauris id, condimentum vulputate nunc. Aliquam a ipsum consequat, ullamcorper velit at, cursus risus. Praesent tempor lacinia risus eget sagittis. Donec et interdum tortor. Etiam dignissim pharetra lacinia. Duis porta ex porttitor tortor bibendum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                    </div>
+                    <div id="zergs" class="tab-pane fade text-justify">
+                        <h2 class="text-center">ZERGS</h2><br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ante maximus, porttitor lorem nec, venenatis neque. Nunc feugiat tortor eros, in blandit sem consectetur vitae. Praesent molestie, dui et mollis tincidunt, elit odio tempor ante, sit amet dignissim elit ante quis dui. Quisque feugiat id risus id aliquam. Maecenas auctor sollicitudin felis, non tempus enim. Curabitur hendrerit, tortor non congue dapibus, dolor dui lobortis odio, quis sollicitudin tortor ante et tortor. Ut vehicula arcu libero, a eleifend nibh vehicula at. Fusce efficitur maximus erat ac faucibus. Suspendisse dictum eros id ex ullamcorper, eget tincidunt quam molestie.</p>
+                        <p class="text-center"><b>Infestação Zerga na Capital</b></p>
+                        <img src="strimg/zerg1.jpg" class="img-responsive" /><br />
+                        <p>Fusce nulla justo, convallis a posuere egestas, viverra eu odio. Nunc et tortor pulvinar, sollicitudin eros non, pellentesque elit. Nam a blandit justo, ac facilisis risus. Curabitur a dictum risus, interdum ornare ligula. Duis a quam id justo venenatis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam at erat at nisi blandit luctus sit amet sed sem. Aliquam cursus, ipsum ac fermentum convallis, ex risus consequat orci, sit amet feugiat arcu ex quis massa. Sed vel ipsum nec nisl vehicula ullamcorper. Fusce fermentum faucibus dolor, vel auctor libero bibendum id. Praesent tortor neque, suscipit eget lorem eu, iaculis accumsan lectus. Vivamus nec velit vestibulum, molestie massa at, accumsan tellus. Suspendisse cursus odio efficitur sollicitudin venenatis. Nam ut cursus ligula. Suspendisse et viverra purus. In hac habitasse platea dictumst.</p>
+                        <p>Sed lacinia ligula leo, ut convallis justo egestas at. Vestibulum maximus augue et massa congue dictum. Fusce urna leo, mollis a mi quis, pharetra vestibulum odio. Ut sit amet sodales nunc, non vestibulum purus. Donec at velit condimentum, efficitur lorem nec, aliquet dolor. Etiam vitae arcu scelerisque, pulvinar magna eu, blandit nunc. Nullam eget vestibulum turpis, ut elementum ante. Sed congue, enim et fermentum feugiat, nisl tellus sollicitudin quam, non viverra est felis id justo. Ut consectetur semper ligula. Suspendisse ex erat, imperdiet sollicitudin tempor id, egestas quis est. Nullam in tellus sit amet justo scelerisque auctor nec nec nisi. Duis suscipit orci tortor. Integer posuere tempus facilisis. Integer nec eros purus. Aenean non varius tellus. Vivamus blandit convallis nisl vel fermentum.</p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Ultralisk</b></p>
+                                <img src="strimg/zerg2.jpg" class="img-responsive" />
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-center"><b>Doido correndo de encontro...</b></p>
+                                <img src="strimg/zerg3.jpg" class="img-responsive" />
+                            </div>
+                        </div>
+                        <br />
+                        <p>Nulla id odio ultrices, dictum turpis in, suscipit eros. Mauris placerat commodo purus, iaculis mattis enim congue sed. Aliquam eget quam sit amet tortor venenatis lacinia. Curabitur convallis, velit id commodo pretium, elit orci interdum velit, et rhoncus ante nibh ac ante. Cras volutpat iaculis elit, et egestas est fringilla sit amet. Fusce eget enim vel mi volutpat pellentesque. Etiam viverra sem vel purus facilisis, non rutrum metus pulvinar. Nullam finibus neque sit amet est luctus lobortis. Curabitur pharetra pretium varius.</p>
+                        <p>Vivamus eget turpis ac turpis hendrerit venenatis vitae vel diam. Vivamus ac malesuada odio. Suspendisse at sapien molestie, pretium est nec, tempor nunc. Pellentesque tempus commodo enim et tincidunt. Aliquam pulvinar neque ac ante tempor, eget ultricies diam congue. Aliquam diam velit, varius ac est ultrices, eleifend efficitur sapien. Curabitur tempor egestas orci a hendrerit. Nulla consectetur congue lobortis. Nam lorem purus, dapibus a mauris id, condimentum vulputate nunc. Aliquam a ipsum consequat, ullamcorper velit at, cursus risus. Praesent tempor lacinia risus eget sagittis. Donec et interdum tortor. Etiam dignissim pharetra lacinia. Duis porta ex porttitor tortor bibendum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid footer text-center">
+        <h3>Starcraft - @Copyright 2016</h3>
+    </div>
+
+</body>
+</html>
